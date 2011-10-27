@@ -27,6 +27,8 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "GradientButton.h"
 
 @protocol MBProgressHUDDelegate;
 
@@ -114,6 +116,11 @@ typedef enum {
 	UIView *customView;
 	
 	CGAffineTransform rotationTransform;
+    
+    BOOL allowsCancelation;
+   	UIButton *_cancelButton;
+   	GradientButton *_cancelButtonGradient;
+    
 }
 
 /**
@@ -276,6 +283,12 @@ typedef enum {
  */
 @property (assign) float progress;
 
+/** 
+ * Shows a cancel button that allows a task to be stopped before completion 
+ * Will call the delegate's hudDidCancel, and remove the HUD (as if hide: was sent), when the button is pressed
+ * GM
+ */
+@property (assign) BOOL allowsCancelation;
 
 /** 
  * Display the HUD. You need to make sure that the main thread completes its run loop soon after this method call so
@@ -343,6 +356,12 @@ typedef enum {
  * @see hudWasHidden:
  */
 - (void)hudWasHidden __attribute__ ((deprecated)); 
+
+/** 
+ * A callback function that is called after the HUD get's cancelled. 
+ * GM
+ */
+- (void)hudDidCancel;
 
 @end
 

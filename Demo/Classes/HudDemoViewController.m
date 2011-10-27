@@ -162,7 +162,6 @@
 	HUD = [[MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES] retain];
 }
 
-
 - (IBAction)showWithGradient:(id)sender {
 	
     HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
@@ -175,6 +174,19 @@
 	
     // Show the HUD while the provided method executes in a new thread
     [HUD showWhileExecuting:@selector(myTask) onTarget:self withObject:nil animated:YES];
+}
+
+- (IBAction)showWithCancel:(id)sender {
+	
+    HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+    [self.navigationController.view addSubview:HUD];
+	HUD.allowsCancelation = YES;
+    HUD.delegate = self;
+    //HUD.labelText = @"Loading";
+    //HUD.detailsLabelText = @"updating data";
+	
+    [HUD showWhileExecuting:@selector(myTask) onTarget:self withObject:nil animated:YES];
+	
 }
 
 #pragma mark -
@@ -252,6 +264,12 @@
     [HUD removeFromSuperview];
     [HUD release];
 	HUD = nil;
+}
+
+
+-(void)hudDidCancel{
+	NSLog(@"Hud Was Canceled");
+	
 }
 
 @end

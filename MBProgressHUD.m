@@ -33,6 +33,10 @@
 @property (retain) NSTimer *minShowTimer;
 @property (retain) NSDate *showStarted;
 
+@property (retain) UIButton *_cancelButton;
+@property (retain) GradientButton *_cancelButtonGradient;
+
+
 @end
 
 
@@ -67,6 +71,10 @@
 @synthesize customView;
 
 @synthesize showStarted;
+
+@synthesize allowsCancelation;
+@synthesize _cancelButton;
+@synthesize _cancelButtonGradient;
 
 - (void)setMode:(MBProgressHUDMode)newMode {
     // Dont change mode if it wasn't actually changed to prevent flickering
@@ -261,6 +269,7 @@
 		self.graceTime = 0.0f;
 		self.minShowTime = 0.0f;
 		self.removeFromSuperViewOnHide = NO;
+        self.allowsCancelation = NO;
 		
 		self.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
 		
@@ -295,6 +304,14 @@
 	[minShowTimer release];
 	[showStarted release];
 	[customView release];
+    
+    [_cancelButtonGradient removeFromSuperview];
+    [_cancelButtonGradient release];
+    
+    [_cancelButton removeFromSuperview];
+	[_cancelButton release];
+
+    
     [super dealloc];
 }
 
@@ -400,7 +417,111 @@
 			
             [self addSubview:detailsLabel];
         }
+        
+       
+        
     }
+    
+    //GM START
+    if(self.allowsCancelation)
+    {
+
+        
+        if(!self._cancelButtonGradient)
+        {
+            
+            self._cancelButtonGradient = [GradientButton buttonWithType:UIButtonTypeCustom];
+            [self._cancelButtonGradient useRedDeleteStyle];
+            [self._cancelButtonGradient setTitle:NSLocalizedString(@"Cancel", "") forState:UIControlStateNormal];
+            self._cancelButtonGradient.titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size: 14.0];
+            [self._cancelButtonGradient setBackgroundColor:[UIColor clearColor]];
+            
+            [self._cancelButtonGradient addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
+            
+
+            
+            /*
+            CAGradientLayer *gradientLayer = [[CAGradientLayer alloc] init];
+            // Set its bounds to be the same of its parent
+            [gradientLayer setBounds:[self bounds]];
+            // Center the layer inside the parent layer
+            [gradientLayer setPosition:
+             CGPointMake([self._cancelButton bounds].size.width/2,
+                         [self._cancelButton bounds].size.height/2)];
+            
+            
+            //                self._cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+            self._cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+            [[self._cancelButton layer] insertSublayer:gradientLayer atIndex:0];
+            [[self._cancelButton layer] setCornerRadius:8.0f];
+            [[self._cancelButton layer] setMasksToBounds:YES];
+            [[self._cancelButton layer] setBorderWidth:1.0f];
+            [gradientLayer setColors:[NSArray arrayWithObjects:(id)[[UIColor blueColor] CGColor], (id)[[UIColor yellowColor] CGColor], nil]];
+            [self._cancelButton setTitle:NSLocalizedString(@"Cancel", "") forState:UIControlStateNormal];
+            self._cancelButton.titleLabel.text = NSLocalizedString(@"Cancel", "") ;
+//            self._cancelButton.selected = NO;
+            self._cancelButton.titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size: 14.0];
+//            self._cancelButton.titleLabel.TextColor = [UIColor blackColor];
+//            self._cancelButton.titleLabel.backgroundColor = [UIColor clearColor];
+            self._cancelButton.titleLabel.textAlignment = UITextAlignmentCenter;
+//            [self._cancelButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//            [self._cancelButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];   
+//            [self._cancelButton setBackgroundColor:[UIColor clearColor]];
+
+//            [self._cancelButton.titleLabel setBackgroundColor:[UIColor redColor]];
+//            [self._cancelButton setTintColor:[UIColor redColor]];
+            //                [self._cancelButton setImage:[UIImage imageNamed:@"CloseButton.png"] forState:UIControlStateNormal];
+            [self._cancelButton addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
+             */
+        }
+        
+        
+        CGSize dims = CGSizeMake(100, 30); //[self._cancelButton sizeThatFits:CGSizeFromString(@"Cancel")];
+        // Compute label dimensions based on font metrics if size is larger than max then clip the label width
+        float lHeight = dims.height;
+        float lWidth;
+        if (dims.width <= (frame.size.width - 2 * margin)) {
+            lWidth = dims.width;
+        }
+        else {
+            lWidth = frame.size.width - 4 * margin;
+        }
+        
+        // Update HUD size
+        if (self.width < (lWidth + 2 * margin)) {
+            self.width = lWidth + 2 * margin;
+        }
+        self.height = self.height + lHeight + PADDING;
+		
+        // Move indicator to make room for the label
+        indFrame.origin.y -= (floorf(lHeight / 2 + PADDING / 2));
+        indicator.frame = indFrame;
+
+        
+        
+        //TODO: Riposizionare il frame
+        //TODO: Fare un frame della dimensione giusta per il bottone
+        
+        self._cancelButtonGradient.frame =  CGRectMake(floorf((frame.size.width - lWidth) / 2) + xOffset,
+                                               floorf(indFrame.origin.y + indFrame.size.height + PADDING), 100, 30) ;
+        
+        //            CGRectMake(((self.bounds.size.width - self.width) / 2) + self.xOffset - 12,
+        //                                                  ((self.bounds.size.height - self.height) / 2) + self.yOffset - 12, 29, 29);
+        
+        if(![self._cancelButtonGradient superview])
+            [self addSubview:self._cancelButtonGradient];
+        
+    }
+    else
+    {
+        if(self._cancelButtonGradient)
+        {
+            [self._cancelButtonGradient removeFromSuperview];
+            self._cancelButtonGradient = nil;
+        }
+    }
+    //GM END
+    
 }
 
 #pragma mark -
@@ -524,6 +645,31 @@
     [objectForExecution release];
 	
     [self hide:useAnimation];
+}
+
+#pragma mark -
+#pragma mark Cancel
+- (void)cancel
+{
+    // If delegate was set make the callback
+    self.alpha = 0.0f;
+    
+	if(delegate != nil && [delegate conformsToProtocol:@protocol(MBProgressHUDDelegate)]) {
+		if([delegate respondsToSelector:@selector(hudDidCancel)]) {
+			[delegate performSelector:@selector(hudDidCancel)];
+		}
+    }
+
+//	if(self._backgroundDimmingView)
+//    {
+//        [self._backgroundDimmingView removeFromSuperview];
+//        self._backgroundDimmingView = nil;
+//    }
+//	
+	if (removeFromSuperViewOnHide) {
+		[self removeFromSuperview];
+	}
+    
 }
 
 #pragma mark -
@@ -724,6 +870,8 @@
     CGContextClosePath(context);
     CGContextFillPath(context);
 }
+
+
 
 @end
 
