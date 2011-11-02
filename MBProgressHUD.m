@@ -433,7 +433,7 @@
             self._cancelButtonGradient = [GradientButton buttonWithType:UIButtonTypeCustom];
             [self._cancelButtonGradient useRedDeleteStyle];
             [self._cancelButtonGradient setTitle:NSLocalizedString(@"Cancel", "") forState:UIControlStateNormal];
-            self._cancelButtonGradient.titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size: 14.0];
+            self._cancelButtonGradient.titleLabel.font = [UIFont boldSystemFontOfSize:14.0]; //fontWithName:@"Helvetica-Bold" size: 14.0];
             [self._cancelButtonGradient setBackgroundColor:[UIColor clearColor]];
             
             [self._cancelButtonGradient addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
@@ -476,7 +476,7 @@
         }
         
         
-        CGSize dims = CGSizeMake(100, 30); //[self._cancelButton sizeThatFits:CGSizeFromString(@"Cancel")];
+        CGSize dims = CGSizeMake(90,30); //[self._cancelButton sizeThatFits:CGSizeFromString(@"Cancel")];
         // Compute label dimensions based on font metrics if size is larger than max then clip the label width
         float lHeight = dims.height;
         float lWidth;
@@ -503,7 +503,7 @@
         //TODO: Fare un frame della dimensione giusta per il bottone
         
         self._cancelButtonGradient.frame =  CGRectMake(floorf((frame.size.width - lWidth) / 2) + xOffset,
-                                               floorf(indFrame.origin.y + indFrame.size.height + PADDING), 100, 30) ;
+                                               floorf(indFrame.origin.y + indFrame.size.height + PADDING), 90, 30) ;
         
         //            CGRectMake(((self.bounds.size.width - self.width) / 2) + self.xOffset - 12,
         //                                                  ((self.bounds.size.height - self.height) / 2) + self.yOffset - 12, 29, 29);
