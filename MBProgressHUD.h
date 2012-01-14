@@ -2,6 +2,7 @@
 //  MBProgressHUD.h
 //  Version 0.4
 //  Created by Matej Bukovinski on 2.4.09.
+//  Modified by Giovanni Maggini
 //
 
 // This code is distributed under the terms and conditions of the MIT license. 
@@ -116,7 +117,8 @@ typedef enum {
 	UIView *customView;
 	
 	CGAffineTransform rotationTransform;
-    
+
+/* Added support for canceling connection with gradient button */
     BOOL allowsCancelation;
    	UIButton *_cancelButton;
    	GradientButton *_cancelButtonGradient;
