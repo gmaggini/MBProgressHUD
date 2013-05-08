@@ -9,25 +9,21 @@
 #import "HudDemoAppDelegate.h"
 #import "HudDemoViewController.h"
 
+
 @implementation HudDemoAppDelegate
 
 @synthesize window;
 @synthesize navController;
 
-
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    
-    // Override point for customization after app launch    
-    [window addSubview:navController.view];
-    [window makeKeyAndVisible];
+	window.rootViewController = navController;
+	[window makeKeyAndVisible];
 }
-
 
 - (void)dealloc {
-    [navController release];
-    [window release];
-    [super dealloc];
+	[navController release];
+	[window release];
+	[super dealloc];
 }
-
 
 @end

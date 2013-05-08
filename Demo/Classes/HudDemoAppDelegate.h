@@ -10,9 +10,10 @@
 
 @class HudDemoViewController;
 
+
 @interface HudDemoAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-    UINavigationController *navController;
+	UIWindow *window;
+	UINavigationController *navController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

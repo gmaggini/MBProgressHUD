@@ -2,6 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">528</int>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 		<string key="IBDocument.SystemVersion">11C74</string>
 		<string key="IBDocument.InterfaceBuilderVersion">1938</string>
 		<string key="IBDocument.AppKitVersion">1138.23</string>
@@ -9,13 +10,22 @@
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">933</string>
+=======
+		<string key="IBDocument.SystemVersion">12C54</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2840</string>
+		<string key="IBDocument.AppKitVersion">1187.34</string>
+		<string key="IBDocument.HIToolboxVersion">625.00</string>
+		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+			<string key="NS.object.0">1926</string>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 		</object>
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<string>IBUIButton</string>
-			<string>IBUIView</string>
-			<string>IBUIScrollView</string>
 			<string>IBProxyObject</string>
+			<string>IBUIButton</string>
+			<string>IBUIScrollView</string>
+			<string>IBUIView</string>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -47,7 +57,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUIButton" id="960472997">
 								<reference key="NSNextResponder" ref="821963304"/>
-								<int key="NSvFlags">294</int>
+								<int key="NSvFlags">290</int>
 								<string key="NSFrame">{{20, 20}, {280, 40}}</string>
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
@@ -71,7 +81,11 @@
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MAA</bytes>
 								</object>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<object class="IBUIFontDescription" key="IBUIFontDescription" id="226145044">
+=======
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="931117317">
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 									<string key="name">Helvetica-Bold</string>
 									<string key="family">Helvetica</string>
 									<int key="traits">2</int>
@@ -85,7 +99,7 @@
 							</object>
 							<object class="IBUIButton" id="626654324">
 								<reference key="NSNextResponder" ref="821963304"/>
-								<int key="NSvFlags">294</int>
+								<int key="NSvFlags">290</int>
 								<string key="NSFrame">{{20, 68}, {280, 40}}</string>
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
@@ -103,12 +117,16 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<reference key="IBUIFontDescription" ref="226145044"/>
+=======
+								<reference key="IBUIFontDescription" ref="931117317"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<reference key="IBUIFont" ref="432819284"/>
 							</object>
 							<object class="IBUIButton" id="244375631">
 								<reference key="NSNextResponder" ref="821963304"/>
-								<int key="NSvFlags">294</int>
+								<int key="NSvFlags">290</int>
 								<string key="NSFrame">{{20, 116}, {280, 40}}</string>
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
@@ -129,16 +147,20 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<reference key="IBUIFontDescription" ref="226145044"/>
+=======
+								<reference key="IBUIFontDescription" ref="931117317"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<reference key="IBUIFont" ref="432819284"/>
 							</object>
 							<object class="IBUIButton" id="322519489">
 								<reference key="NSNextResponder" ref="821963304"/>
-								<int key="NSvFlags">294</int>
+								<int key="NSvFlags">290</int>
 								<string key="NSFrame">{{20, 164}, {280, 40}}</string>
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="424785"/>
+								<reference key="NSNextKeyView" ref="706142914"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -152,13 +174,40 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<reference key="IBUIFontDescription" ref="226145044"/>
+=======
+								<reference key="IBUIFontDescription" ref="931117317"/>
+								<reference key="IBUIFont" ref="432819284"/>
+							</object>
+							<object class="IBUIButton" id="706142914">
+								<reference key="NSNextResponder" ref="821963304"/>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{20, 212}, {280, 40}}</string>
+								<reference key="NSSuperview" ref="821963304"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="424785"/>
+								<bool key="IBUIOpaque">NO</bool>
+								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<int key="IBUIContentHorizontalAlignment">0</int>
+								<int key="IBUIContentVerticalAlignment">3</int>
+								<int key="IBUIButtonType">1</int>
+								<string key="IBUINormalTitle">Annular determinate mode</string>
+								<reference key="IBUIHighlightedTitleColor" ref="434568641"/>
+								<object class="NSColor" key="IBUINormalTitleColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
+								</object>
+								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+								<reference key="IBUIFontDescription" ref="931117317"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<reference key="IBUIFont" ref="432819284"/>
 							</object>
 							<object class="IBUIButton" id="319652209">
 								<reference key="NSNextResponder" ref="821963304"/>
-								<int key="NSvFlags">294</int>
-								<string key="NSFrame">{{20, 260}, {280, 40}}</string>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{20, 308}, {280, 40}}</string>
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="302056160"/>
@@ -175,13 +224,17 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<reference key="IBUIFontDescription" ref="226145044"/>
+=======
+								<reference key="IBUIFontDescription" ref="931117317"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<reference key="IBUIFont" ref="432819284"/>
 							</object>
 							<object class="IBUIButton" id="302056160">
 								<reference key="NSNextResponder" ref="821963304"/>
-								<int key="NSvFlags">294</int>
-								<string key="NSFrame">{{20, 308}, {280, 40}}</string>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{20, 354}, {280, 44}}</string>
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="304407605"/>
@@ -191,20 +244,24 @@
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">3</int>
 								<int key="IBUIButtonType">1</int>
-								<string key="IBUINormalTitle">Inline (blocks)</string>
+								<string key="IBUINormalTitle">Using blocks</string>
 								<reference key="IBUIHighlightedTitleColor" ref="434568641"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<reference key="IBUIFontDescription" ref="226145044"/>
+=======
+								<reference key="IBUIFontDescription" ref="931117317"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<reference key="IBUIFont" ref="432819284"/>
 							</object>
 							<object class="IBUIButton" id="304407605">
 								<reference key="NSNextResponder" ref="821963304"/>
-								<int key="NSvFlags">294</int>
-								<string key="NSFrame">{{20, 356}, {280, 40}}</string>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{20, 404}, {280, 40}}</string>
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="295510578"/>
@@ -221,13 +278,17 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<reference key="IBUIFontDescription" ref="226145044"/>
+=======
+								<reference key="IBUIFontDescription" ref="931117317"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<reference key="IBUIFont" ref="432819284"/>
 							</object>
 							<object class="IBUIButton" id="295510578">
 								<reference key="NSNextResponder" ref="821963304"/>
-								<int key="NSvFlags">294</int>
-								<string key="NSFrame">{{20, 404}, {280, 40}}</string>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{20, 452}, {280, 40}}</string>
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="8005370"/>
@@ -244,13 +305,17 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<reference key="IBUIFontDescription" ref="226145044"/>
+=======
+								<reference key="IBUIFontDescription" ref="931117317"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<reference key="IBUIFont" ref="432819284"/>
 							</object>
 							<object class="IBUIButton" id="424785">
 								<reference key="NSNextResponder" ref="821963304"/>
-								<int key="NSvFlags">294</int>
-								<string key="NSFrame">{{20, 212}, {280, 40}}</string>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{20, 260}, {280, 40}}</string>
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="319652209"/>
@@ -267,29 +332,64 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<reference key="IBUIFontDescription" ref="226145044"/>
+=======
+								<reference key="IBUIFontDescription" ref="931117317"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<reference key="IBUIFont" ref="432819284"/>
 							</object>
 							<object class="IBUIButton" id="8005370">
 								<reference key="NSNextResponder" ref="821963304"/>
-								<int key="NSvFlags">294</int>
-								<string key="NSFrame">{{20, 451}, {280, 40}}</string>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{20, 499}, {280, 40}}</string>
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<reference key="NSNextKeyView" ref="158104767"/>
+=======
+								<reference key="NSNextKeyView" ref="686140023"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">3</int>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
+=======
 								<int key="IBUIButtonType">1</int>
-								<string key="IBUINormalTitle">With Gradient</string>
+								<string key="IBUINormalTitle">Dim background</string>
 								<reference key="IBUIHighlightedTitleColor" ref="434568641"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+								<reference key="IBUIFontDescription" ref="931117317"/>
+								<reference key="IBUIFont" ref="432819284"/>
+							</object>
+							<object class="IBUIButton" id="686140023">
+								<reference key="NSNextResponder" ref="821963304"/>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{20, 547}, {280, 40}}</string>
+								<reference key="NSSuperview" ref="821963304"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="952034185"/>
+								<bool key="IBUIOpaque">NO</bool>
+								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<int key="IBUIContentHorizontalAlignment">0</int>
+								<int key="IBUIContentVerticalAlignment">3</int>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
+								<int key="IBUIButtonType">1</int>
+								<string key="IBUINormalTitle">Text only</string>
+								<reference key="IBUIHighlightedTitleColor" ref="434568641"/>
+								<object class="NSColor" key="IBUINormalTitleColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
+								</object>
+								<reference key="IBUINormalTitleShadowColor" ref="612289531"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<reference key="IBUIFontDescription" ref="226145044"/>
 								<reference key="IBUIFont" ref="432819284"/>
 							</object>
@@ -300,12 +400,28 @@
 								<reference key="NSSuperview" ref="821963304"/>
 								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:225</string>
+=======
+								<reference key="IBUIFontDescription" ref="931117317"/>
+								<reference key="IBUIFont" ref="432819284"/>
+							</object>
+							<object class="IBUIButton" id="952034185">
+								<reference key="NSNextResponder" ref="821963304"/>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{20, 595}, {280, 37}}</string>
+								<reference key="NSSuperview" ref="821963304"/>
+								<reference key="NSWindow"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<int key="IBUIButtonType">1</int>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<string key="IBUINormalTitle">With Cancel</string>
+=======
+								<string key="IBUINormalTitle">Colored</string>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<object class="NSColor" key="IBUIHighlightedTitleColor">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MQA</bytes>
@@ -325,7 +441,11 @@
 								<reference key="IBUIFont" ref="432819284"/>
 							</object>
 						</object>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 						<string key="NSFrameSize">{320, 556}</string>
+=======
+						<string key="NSFrameSize">{320, 649}</string>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 						<reference key="NSSuperview" ref="560298147"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="960472997"/>
@@ -338,7 +458,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</object>
-				<string key="NSFrameSize">{320, 501}</string>
+				<string key="NSFrameSize">{320, 649}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="821963304"/>
@@ -450,12 +570,39 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 						<string key="label">showWithCancel:</string>
 						<reference key="source" ref="158104767"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">83</int>
+=======
+						<string key="label">showWIthLabelAnnularDeterminate:</string>
+						<reference key="source" ref="706142914"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">108</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">showTextOnly:</string>
+						<reference key="source" ref="686140023"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">113</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">showWithColor:</string>
+						<reference key="source" ref="952034185"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">116</int>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -500,13 +647,29 @@
 							<reference ref="424785"/>
 							<reference ref="304407605"/>
 							<reference ref="302056160"/>
-							<reference ref="960472997"/>
 							<reference ref="626654324"/>
 							<reference ref="295510578"/>
+							<reference ref="960472997"/>
 							<reference ref="8005370"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 							<reference ref="158104767"/>
+=======
+							<reference ref="706142914"/>
+							<reference ref="686140023"/>
+							<reference ref="952034185"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 						</object>
 						<reference key="parent" ref="560298147"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">16</int>
+						<reference key="object" ref="322519489"/>
+						<reference key="parent" ref="821963304"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">8</int>
+						<reference key="object" ref="960472997"/>
+						<reference key="parent" ref="821963304"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">76</int>
@@ -519,8 +682,8 @@
 						<reference key="parent" ref="821963304"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">8</int>
-						<reference key="object" ref="960472997"/>
+						<int key="objectID">71</int>
+						<reference key="object" ref="304407605"/>
 						<reference key="parent" ref="821963304"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -529,23 +692,8 @@
 						<reference key="parent" ref="821963304"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">71</int>
-						<reference key="object" ref="304407605"/>
-						<reference key="parent" ref="821963304"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">43</int>
 						<reference key="object" ref="424785"/>
-						<reference key="parent" ref="821963304"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">20</int>
-						<reference key="object" ref="319652209"/>
-						<reference key="parent" ref="821963304"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">16</int>
-						<reference key="object" ref="322519489"/>
 						<reference key="parent" ref="821963304"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -554,8 +702,28 @@
 						<reference key="parent" ref="821963304"/>
 					</object>
 					<object class="IBObjectRecord">
+						<int key="objectID">20</int>
+						<reference key="object" ref="319652209"/>
+						<reference key="parent" ref="821963304"/>
+					</object>
+					<object class="IBObjectRecord">
 						<int key="objectID">79</int>
 						<reference key="object" ref="8005370"/>
+						<reference key="parent" ref="821963304"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">106</int>
+						<reference key="object" ref="706142914"/>
+						<reference key="parent" ref="821963304"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">111</int>
+						<reference key="object" ref="686140023"/>
+						<reference key="parent" ref="821963304"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">115</int>
+						<reference key="object" ref="952034185"/>
 						<reference key="parent" ref="821963304"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -574,6 +742,9 @@
 					<string>-2.CustomClassName</string>
 					<string>-2.IBPluginDependency</string>
 					<string>10.IBPluginDependency</string>
+					<string>106.IBPluginDependency</string>
+					<string>111.IBPluginDependency</string>
+					<string>115.IBPluginDependency</string>
 					<string>16.IBPluginDependency</string>
 					<string>20.IBPluginDependency</string>
 					<string>43.IBPluginDependency</string>
@@ -587,7 +758,7 @@
 					<string>82.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
 				</object>
-				<object class="NSMutableArray" key="dict.values">
+				<object class="NSArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>HudDemoViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -600,6 +771,11 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
+=======
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -620,7 +796,11 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 			<int key="maxID">83</int>
+=======
+			<int key="maxID">116</int>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -634,16 +814,23 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>showOnWindow:</string>
 							<string>showSimple:</string>
+							<string>showTextOnly:</string>
 							<string>showURL:</string>
 							<string>showUsingBlocks:</string>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 							<string>showWithCancel:</string>
+=======
+							<string>showWIthLabelAnnularDeterminate:</string>
+							<string>showWithColor:</string>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 							<string>showWithCustomView:</string>
 							<string>showWithDetailsLabel:</string>
+							<string>showWithGradient:</string>
 							<string>showWithLabel:</string>
 							<string>showWithLabelDeterminate:</string>
 							<string>showWithLabelMixed:</string>
 						</object>
-						<object class="NSMutableArray" key="dict.values">
+						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>id</string>
 							<string>id</string>
@@ -655,6 +842,12 @@
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
+=======
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
@@ -663,16 +856,23 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>showOnWindow:</string>
 							<string>showSimple:</string>
+							<string>showTextOnly:</string>
 							<string>showURL:</string>
 							<string>showUsingBlocks:</string>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 							<string>showWithCancel:</string>
+=======
+							<string>showWIthLabelAnnularDeterminate:</string>
+							<string>showWithColor:</string>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 							<string>showWithCustomView:</string>
 							<string>showWithDetailsLabel:</string>
+							<string>showWithGradient:</string>
 							<string>showWithLabel:</string>
 							<string>showWithLabelDeterminate:</string>
 							<string>showWithLabelMixed:</string>
 						</object>
-						<object class="NSMutableArray" key="dict.values">
+						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBActionInfo">
 								<string key="name">showOnWindow:</string>
@@ -680,6 +880,10 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">showSimple:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">showTextOnly:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
@@ -691,7 +895,15 @@
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 								<string key="name">showWithCancel:</string>
+=======
+								<string key="name">showWIthLabelAnnularDeterminate:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">showWithColor:</string>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
@@ -700,6 +912,10 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">showWithDetailsLabel:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">showWithGradient:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
@@ -731,7 +947,11 @@
 		</object>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 			<real value="1280" key="NS.object.0"/>
+=======
+			<real value="1536" key="NS.object.0"/>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 		</object>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.InterfaceBuilder3</string>
@@ -739,6 +959,10 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+<<<<<<< HEAD:Demo/HudDemoViewController.xib
 		<string key="IBCocoaTouchPluginVersion">933</string>
+=======
+		<string key="IBCocoaTouchPluginVersion">1926</string>
+>>>>>>> aa9ecd55da0120a970544d2fea5ac04691149fee:Demo/en.lproj/HudDemoViewController.xib
 	</data>
 </archive>
